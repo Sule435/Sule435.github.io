@@ -220,6 +220,24 @@ section {
   color: #fff;
 }
 
+.sec-about .col-big {
+  float: left;
+  position: absolute;
+  width: 25%;
+  height: 20vw;
+}
+.sec-about img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: .1;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sec-about img:hover {
+  opacity: 1;
+}
 .sec-about .content {
   height: 55%;
   text-align: center;
@@ -254,7 +272,26 @@ section {
 /*Contact*/
 .sec-contact {
   background: #eed9e8;
+  color:rgb(0, 0, 0)
 }
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.row {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.row li {
+  padding: 10px;
+} 
 
 .soc-media {
   display: -webkit-box;
@@ -309,4 +346,13 @@ section {
 .soc-media a:active {
   color: #666;
 }
+
+.soc-media li {
+  float: left;
+}
+
+.soc-media li:not(:first-child) a {
+  margin-left: .90em;
+}
+
 /*# sourceMappingURL=style.css.map */
